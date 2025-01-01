@@ -27,7 +27,6 @@
             <!-- Navigation Links -->
             <nav class="nav">
                 <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="about.html">DONATE</a>
                 <a class="nav-link" href="privacy.html">Privacy</a>
             </nav>
         </div>
@@ -38,7 +37,9 @@
     <div class="container">
         <h1>Feeding Benita Foundation</h1>
         <p>Together, we can ensure that one starving child, Benita, never goes hungry again.</p>
-        <a href="donate.html" class="btn btn-primary btn-lg mt-4">Donate Now</a>
+        <button type="button" class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#donateModal">
+            Donate Now
+        </button>
     </div>
 </section>
 <section class="vision-section py-5">
@@ -82,6 +83,39 @@
         </div>
     </div>
 </section>
+<!-- Donate Modal -->
+<div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="donateModalLabel">Donate to Feed Benita</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form id="donateForm" action="https://formspree.io/f/mlddplyp" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="3" 
+                            placeholder="Enter a short message (optional). CashApp username: @rmukondiwa"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Footer -->
     <footer>

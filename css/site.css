@@ -90,6 +90,28 @@ body {
   line-height: 1.8;
   color: #555; /* Medium gray for the text */
 }
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body .btn-primary {
+  background-color: green;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body .btn-primary:hover {
+  background-color: darkgreen;
+}
 /* Footer */
 footer {
   text-align: center;
