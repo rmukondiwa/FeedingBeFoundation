@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Topbar Styling */
+.topbar {
+  background-color: #f8f9fa; /* Light gray background */
+  border-bottom: 1px solid #eaeaea; /* Subtle border */
+  padding: 0.75rem 2rem; /* Adjust topbar padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem; /* Slightly larger text size */
+}
+
+.topbar .navbar-brand {
+  font-size: 1.5rem; /* Larger logo font size */
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.topbar .nav-link {
+  font-weight: 500;
+  color: #333;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.topbar .nav-link:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+/* Hero Section */
+.hero-banner {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-image: url('../images/gazingkid.jpeg');
+  background-size: 25%;
+  background-repeat: no-repeat; /* Avoids image repetition */
+  background-position: center;
+  height: 70vh; /* Adjust banner height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff; /* White text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+}
+
+.hero-banner p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff; /* White text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+}
+
+.hero-banner .btn-primary {
+  background-color: green; /* Button color */
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add button shadow */
+}
+
+.vision-section img {
+  max-height: 400px; /* Limits the height of the image */
+  object-fit: cover; /* Keeps the image proportional */
+}
+
+.vision-section h2 {
+  font-size: 2.5rem;
+  color: #343a40; /* Dark gray for the heading */
+}
+
+.vision-section .lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #555; /* Medium gray for the text */
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
